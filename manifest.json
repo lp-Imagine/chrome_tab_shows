@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "tab-shows",
+  "version": "1.0",
+  "description": "A plug-in for displaying tab.",
+  "permissions": [
+      "tabs"
+  ],
+  "icons": {
+    "16": "./icons/logo_16.png",
+    "32": "./icons/logo_32.png",
+    "48": "./icons/logo_48.png",
+    "128": "./icons/logo_128.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "browser_action": {
+    "default_icon": {
+      "16": "./icons/logo_16.png",
+      "32": "./icons/logo_32.png",
+      "48": "./icons/logo_48.png"
+    },
+    "default_title": "Tab shows",
+    "default_popup": "./popup.html"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Q",
+        "mac": "Command+Shift+A"
+      }
+    }
+  }
+}
